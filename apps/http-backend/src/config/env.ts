@@ -3,5 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 export const config = {
-    PORT: process.env.PORT || 3000,
+    port: process.env.PORT || 3000,
+    jwtSecret: process.env.JWT_SECRET || 'your-default-secret',
+
 }
