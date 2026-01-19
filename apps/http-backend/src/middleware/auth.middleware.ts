@@ -2,7 +2,7 @@
 import { Request, Response, NextFunction } from "express";
 import * as jwt from 'jsonwebtoken';
 import { config } from "@repo/config";
-import { Logger } from "../utils/logger";
+import { Logger } from "@repo/lib";
 import { sendResponse } from "../lib/helper";
 
 export type userId = string;
