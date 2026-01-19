@@ -1,8 +1,9 @@
 import express from 'express';
+import { config } from './config/env';
 
 const app = express();
 
-const PORT = process.env.PORT || 3001;
+const PORT = config.port || 3001;
 
 app.listen(PORT, (err) => {
   if (err) {
