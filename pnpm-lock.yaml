@@ -30,6 +30,9 @@ importers:
         specifier: ^9.0.3
         version: 9.0.3
     devDependencies:
+      '@repo/config':
+        specifier: workspace:*
+        version: link:../../packages/config
       '@repo/config-prettier':
         specifier: workspace:*
         version: link:../../packages/config-prettier
@@ -97,12 +100,6 @@ importers:
 
   apps/ws-backend:
     dependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
       jsonwebtoken:
         specifier: ^9.0.3
         version: 9.0.3
@@ -110,12 +107,31 @@ importers:
         specifier: ^8.19.0
         version: 8.19.0
     devDependencies:
+      '@repo/config':
+        specifier: workspace:*
+        version: link:../../packages/config
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       '@types/jsonwebtoken':
         specifier: ^9.0.10
         version: 9.0.10
       '@types/ws':
         specifier: ^8.18.1
         version: 8.18.1
+
+  packages/config:
+    dependencies:
+      dotenv:
+        specifier: ^17.2.3
+        version: 17.2.3
+    devDependencies:
+      '@types/dotenv':
+        specifier: ^8.2.3
+        version: 8.2.3
 
   packages/config-prettier:
     devDependencies:
