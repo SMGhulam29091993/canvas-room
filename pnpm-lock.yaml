@@ -20,19 +20,25 @@ importers:
 
   apps/http-backend:
     dependencies:
+      express:
+        specifier: ^5.2.1
+        version: 5.2.1
+    devDependencies:
+      '@repo/config-prettier':
+        specifier: workspace:*
+        version: link:../../packages/config-prettier
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      express:
-        specifier: ^5.2.1
-        version: 5.2.1
-    devDependencies:
       '@types/express':
         specifier: ^5.0.6
         version: 5.0.6
+      prettier:
+        specifier: ^3.7.4
+        version: 3.7.4
 
   apps/web:
     dependencies:
@@ -49,6 +55,9 @@ importers:
         specifier: ^19.2.0
         version: 19.2.0(react@19.2.0)
     devDependencies:
+      '@repo/config-prettier':
+        specifier: workspace:*
+        version: link:../../packages/config-prettier
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
@@ -67,6 +76,9 @@ importers:
       eslint:
         specifier: ^9.39.1
         version: 9.39.1
+      prettier:
+        specifier: ^3.7.4
+        version: 3.7.4
       typescript:
         specifier: 5.9.2
         version: 5.9.2
@@ -86,6 +98,12 @@ importers:
       '@types/ws':
         specifier: ^8.18.1
         version: 8.18.1
+
+  packages/config-prettier:
+    devDependencies:
+      prettier:
+        specifier: ^3.7.4
+        version: 3.7.4
 
   packages/eslint-config:
     devDependencies:

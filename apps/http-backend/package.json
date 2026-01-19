@@ -10,14 +10,16 @@
     "start": "node ./dist/index.js"
   },
   "dependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "@repo/eslint-config": "workspace:*",
     "express": "^5.2.1"
   },
   "keywords": [],
   "author": "S M Ghulam Ghaus Faiyaz",
   "license": "ISC",
   "devDependencies": {
-    "@types/express": "^5.0.6"
+    "@repo/typescript-config": "workspace:*",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/config-prettier": "workspace:*",
+    "@types/express": "^5.0.6",
+    "prettier": "^3.7.4"
   }
 }
