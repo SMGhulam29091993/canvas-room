@@ -19,20 +19,20 @@ The application focuses on **low-latency updates**, **smooth rendering**, and **
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, TypeScript, HTML Canvas  
-- **Backend:** Node.js, Express  
-- **Real-time:** WebSockets / Socket.IO  
-- **Optional Persistence:** PSQL and PRISMA  
+- **Frontend:** React, TypeScript, HTML Canvas
+- **Backend:** Node.js, Express
+- **Real-time:** WebSockets / Socket.IO
+- **Optional Persistence:** PSQL and PRISMA
 - **Deployment:** AWS/Digital Ocean
 
 ---
 
 ## 🎯 Use Cases
 
-- Remote brainstorming and ideation  
-- Team whiteboarding  
-- Online classrooms  
-- System design and planning sessions  
+- Remote brainstorming and ideation
+- Team whiteboarding
+- Online classrooms
+- System design and planning sessions
 
 ---
 
