@@ -2,17 +2,17 @@
   "name": "@repo/config",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "./dist/env.js",
   "exports": {
     ".": {
-      "import": "./dist/env.js",
+      "require": "./dist/env.js",
       "types": "./dist/env.d.ts"
     },
     "./env": {
-      "import": "./dist/env.js",
+      "require": "./dist/env.js",
       "types": "./dist/env.d.ts"
     }
+    
   },
   "scripts": {
     "build": "tsc -b",
