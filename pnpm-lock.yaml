@@ -20,9 +20,6 @@ importers:
 
   apps/http-backend:
     dependencies:
-      '@repo/lib':
-        specifier: workspace:*
-        version: link:../../packages/lib
       dotenv:
         specifier: ^17.2.3
         version: 17.2.3
@@ -42,9 +39,15 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@repo/lib':
+        specifier: workspace:*
+        version: link:../../packages/lib
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
+      '@repo/zod-dto':
+        specifier: workspace:*
+        version: link:../../packages/zod-dto
       '@types/dotenv':
         specifier: ^8.2.3
         version: 8.2.3
@@ -122,6 +125,9 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
+      '@repo/zod-dto':
+        specifier: workspace:*
+        version: link:../../packages/zod-dto
       '@types/jsonwebtoken':
         specifier: ^9.0.10
         version: 9.0.10

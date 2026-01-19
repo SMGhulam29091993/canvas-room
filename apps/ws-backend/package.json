@@ -22,6 +22,7 @@
     "@repo/typescript-config": "workspace:*",
     "@repo/config" : "workspace:*",
     "@repo/lib": "workspace:*",
+    "@repo/zod-dto": "workspace:*",
     "@types/ws": "^8.18.1"
   }
 }
