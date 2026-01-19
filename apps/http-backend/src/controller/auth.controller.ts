@@ -1,6 +1,15 @@
 import { NextFunction, Request, Response } from 'express';
 
-export const signup = async (
+export const signUp = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+
+};
+
+
+export const signIn = async (
   req: Request,
   res: Response,
   next: NextFunction
