@@ -3,9 +3,17 @@ import { Request, Response, NextFunction } from "express";
 import * as jwt from 'jsonwebtoken';
 import { config } from "@repo/config";
 import { Logger } from "@repo/lib";
-import { sendResponse } from "../lib/helper";
+import { sendResponse } from "@repo/lib";
 
 export type userId = string;
+
+declare global {
+    namespace Express {
+        interface Request {
+            userId?: userId;
+        }
+    }
+}
 
 export const authMiddleware = (req : Request, res : Response, next : NextFunction) => {
     try {
