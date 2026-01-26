@@ -196,9 +196,6 @@ importers:
       '@repo/config':
         specifier: workspace:*
         version: link:../config
-      '@repo/zod-dto':
-        specifier: workspace:*
-        version: link:../zod-dto
       '@types/express':
         specifier: ^5.0.6
         version: 5.0.6
@@ -238,6 +235,12 @@ importers:
 
   packages/zod-dto:
     dependencies:
+      '@repo/lib':
+        specifier: workspace:*
+        version: link:../lib
+      express:
+        specifier: ^5.2.1
+        version: 5.2.1
       zod:
         specifier: ^4.3.5
         version: 4.3.5
@@ -245,6 +248,9 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
+      '@types/express':
+        specifier: ^5.0.6
+        version: 5.0.6
 
 packages:
 

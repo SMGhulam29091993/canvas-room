@@ -14,13 +14,20 @@
     "build": "tsc -b",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["zod", "dto", "validation"],
+  "keywords": [
+    "zod",
+    "dto",
+    "validation"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "zod": "^4.3.5"
+    "express": "^5.2.1",
+    "zod": "^4.3.5",
+    "@repo/lib": "workspace:*"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*"
+    "@repo/typescript-config": "workspace:*",
+    "@types/express": "^5.0.6"
   }
 }

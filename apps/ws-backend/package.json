@@ -2,6 +2,7 @@
   "name": "ws-backend",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,7 +21,7 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@repo/config" : "workspace:*",
+    "@repo/config": "workspace:*",
     "@repo/lib": "workspace:*",
     "@repo/zod-dto": "workspace:*",
     "@types/ws": "^8.18.1"

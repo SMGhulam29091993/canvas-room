@@ -5,7 +5,12 @@ export const signUp = async (
   res: Response,
   next: NextFunction
 ) => {
-
+  try {
+    const userData = req.body;
+    
+  } catch (error) {
+    
+  }
 };
 
 

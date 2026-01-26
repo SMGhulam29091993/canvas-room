@@ -1,5 +1,12 @@
-import {Response} from 'express';
-import {IApiResponse} from '@repo/zod-dto';
+import { Response } from "express";
+
+export interface IApiResponse<T = any> {
+  statusCode: number;
+  success: boolean;
+  message: string;
+  data?: T | null;
+  error?: T | null;
+}
 
 export const sendResponse = <T>(
   res: Response,
@@ -7,14 +14,14 @@ export const sendResponse = <T>(
   success: boolean,
   message: string,
   data?: T | null,
-  error?: T | null
+  error?: T | null,
 ): Response => {
   const response: IApiResponse<T> = {
     statusCode,
     success,
     message,
-    data: data ?? null,  
-    error: error ?? null, 
+    data: data ?? null,
+    error: error ?? null,
   };
   return res.status(statusCode).json(response);
 };
