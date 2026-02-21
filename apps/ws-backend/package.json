@@ -12,7 +12,10 @@
   },
   "dependencies": {
     "jsonwebtoken": "^9.0.3",
-    "ws": "^8.19.0"
+    "ws": "^8.19.0",
+    "@repo/lib": "workspace:*",
+    "@repo/config": "workspace:*",
+    "@repo/db": "workspace:*"
   },
   "keywords": [],
   "author": "",
@@ -21,8 +24,6 @@
     "@types/jsonwebtoken": "^9.0.10",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@repo/config": "workspace:*",
-    "@repo/lib": "workspace:*",
     "@repo/zod-dto": "workspace:*",
     "@types/ws": "^8.18.1"
   }
