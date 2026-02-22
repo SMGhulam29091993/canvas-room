@@ -15,7 +15,7 @@
     }
   },
   "scripts": {
-    "build": "tsc -b",
+    "build": "tsc -b --clean && tsc -b",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -25,6 +25,7 @@
     "dotenv": "^17.2.3"
   },
   "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
     "@types/dotenv": "^8.2.3"
   }
 }
