@@ -25,7 +25,7 @@ export const signUp = async (
       data: userData,
     });
 
-    if(!newUser) sendResponse(res, 500, false, 'Failed to create user');
+    if(!newUser) sendResponse(res, 400, false, 'Failed to create user');
     
     sendResponse(res, 201, false, 'User created successfully', { userId: newUser.id });
     
