@@ -2,6 +2,7 @@
   "name": "@repo/db",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "exports": {
     ".": {
@@ -12,20 +13,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prisma:generate": "prisma generate",
-    "build" : "tsc -b"
+    "build": "tsc -b"
   },
   "devDependencies": {
     "@repo/config-prettier": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.15.3"
+    "@types/node": "^22.15.3",
+    "@types/pg": "^8.16.0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.4.1",
     "@prisma/client": "^7.4.0",
     "dotenv": "^17.2.3",
+    "pg": "^8.18.0",
     "prisma": "^7.4.0"
   }
 }
