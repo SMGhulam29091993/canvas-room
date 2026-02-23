@@ -1,5 +1,5 @@
-import { prismaClient } from '@repo/db/dist/index.js';
-import { sendResponse } from '@repo/lib/dist/helper.js';
+import { prismaClient } from '@repo/db';
+import { sendResponse } from '@repo/lib';
 import bcrypt from 'bcrypt';
 import { NextFunction, Request, Response } from 'express';
 
@@ -16,7 +16,7 @@ export const signUp = async (
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
-    const userData= {
+    const userData = {
       email,
       password: hashedPassword,
     }
@@ -25,10 +25,10 @@ export const signUp = async (
       data: userData,
     });
 
-    if(!newUser) sendResponse(res, 400, false, 'Failed to create user');
-    
+    if (!newUser) sendResponse(res, 400, false, 'Failed to create user');
+
     sendResponse(res, 201, false, 'User created successfully', { userId: newUser.id });
-    
+
   } catch (error) {
     next(error);
   }
@@ -50,7 +50,7 @@ export const signIn = async (
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
       return sendResponse(res, 400, true, 'Invalid email or password');
-    } 
+    }
 
     sendResponse(res, 200, false, 'Sign in successful', { userId: user.id });
   } catch (error) {
