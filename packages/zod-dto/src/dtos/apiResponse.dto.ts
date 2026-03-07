@@ -8,4 +8,4 @@ export const ApiResponseDto = z.object({
   error: z.any().nullable().optional(),
 });
 
-export type { IApiResponse } from "@repo/lib";
+export type IApiResponse = z.infer<typeof ApiResponseDto>;
